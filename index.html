@@ -655,15 +655,10 @@
             $(function() {
 
                 var myOpen = function(dialog) {
-                    if($(".overview").length > 0) {
-                        dialog.w.hide();
-                        $("#dialog").jqmHide();
-                    } else {
                         var html = $("section.present").first().find(".preview").html();
                         console.log(html);
                         $("#article").html(html);
                         dialog.w.show();
-                    }
                 };
                 $("#dialog").jqm({onShow: myOpen});
 
