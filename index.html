@@ -668,10 +668,15 @@
             $(function() {
 
                 var myOpen = function(dialog) {
-                    var html = $("section.present").first().find(".preview").html();
-                    console.log(html);
-                    $("#article").text(html);
-                    dialog.w.show();
+                    if($(".overview").length > 0) {
+                        dialog.w.hide();
+                        $("#dialog").jqmHide();
+                    } else {
+                        var html = $("section.present").first().find(".preview").html();
+                        console.log(html);
+                        $("#article").text(html);
+                        dialog.w.show();
+                    }
                 };
                 $("#dialog").jqm({onShow: myOpen});
 

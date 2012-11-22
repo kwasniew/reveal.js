@@ -4,6 +4,7 @@
     <list default="true" id="113beea5-936c-47ca-bc26-988e8e7c10f2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/hackathon.js" afterPath="$PROJECT_DIR$/js/hackathon.js" />
     </list>
     <ignored path="reveal.js.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,7 +65,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1960" column="0" selection-start="126544" selection-end="126544" vertical-scroll-proportion="0.8267565">
+            <state line="667" column="69" selection-start="38123" selection-end="38123" vertical-scroll-proportion="0.66795">
               <folding />
             </state>
           </provider>
@@ -73,7 +74,7 @@
       <file leaf-file-name="hackathon.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/hackathon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="37" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0">
+            <state line="21" column="48" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -148,8 +149,8 @@
         <option value="$PROJECT_DIR$/js/jquery.colorbox.js" />
         <option value="$PROJECT_DIR$/css/colorbox.css" />
         <option value="$PROJECT_DIR$/js/jqModal.js" />
-        <option value="$PROJECT_DIR$/js/hackathon.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/hackathon.js" />
       </list>
     </option>
   </component>
@@ -491,7 +492,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/hackathon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="37" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0">
+        <state line="21" column="48" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -500,7 +501,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1960" column="0" selection-start="126544" selection-end="126544" vertical-scroll-proportion="0.8267565">
+        <state line="667" column="69" selection-start="38123" selection-end="38123" vertical-scroll-proportion="0.66795">
           <folding />
         </state>
       </provider>

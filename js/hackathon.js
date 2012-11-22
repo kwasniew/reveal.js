@@ -15,14 +15,14 @@ $(function () {
 					*/
 
 	function tmplArticle(article, category, categoryText,  i, limit){
-		var articleView = $('<section class="jqModal">').append('<div class="parentCategory"><a href="#/'+
+		var articleView = $('<section>').append('<div class="parentCategory"><a href="#/'+
 			category+'" class="">back to '+
 			categoryText+'</a></div>');
 			
-			var heading = $('<h2>').text(article.tittel);
+			var heading = $('<h2 class="jqModal">').text(article.tittel);
 			articleView.append(heading);
 			if(article.media && article.media.w480) {
-				var image = $('<img>').attr({src: article.media.w480});
+				var image = $('<img class="jqModal">').attr({src: article.media.w480});
 				articleView.append(image);
 			}
 			articleView.append('<div class="hidden preview">'+article.description+'</div>');
