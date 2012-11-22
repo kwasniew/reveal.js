@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="113beea5-936c-47ca-bc26-988e8e7c10f2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/colorbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jqModal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.colorbox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="reveal.js.iws" />
@@ -63,8 +67,32 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="0" selection-start="1892" selection-end="1892" vertical-scroll-proportion="0.47053233">
-              <folding />
+            <state line="196" column="25" selection-start="5775" selection-end="5775" vertical-scroll-proportion="0.78612167">
+              <folding>
+                <marker date="1353581035000" expanded="true" signature="2002:2167" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jqModal.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/jqModal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="11" selection-start="3834" selection-end="3834" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="colorbox.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/colorbox.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="1" selection-start="4850" selection-end="4850" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1353579008000" expanded="true" signature="4616:4846" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,6 +150,9 @@
         <option value="$PROJECT_DIR$/css/carousel.css" />
         <option value="$PROJECT_DIR$/js/setup.js" />
         <option value="$PROJECT_DIR$/js/md5.js" />
+        <option value="$PROJECT_DIR$/js/jquery.colorbox.js" />
+        <option value="$PROJECT_DIR$/css/colorbox.css" />
+        <option value="$PROJECT_DIR$/js/jqModal.js" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -437,10 +468,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.colorbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="951" column="29" selection-start="33703" selection-end="33703" vertical-scroll-proportion="0.972119">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/colorbox.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="1" selection-start="4850" selection-end="4850" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1353579008000" expanded="true" signature="4616:4846" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jqModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="11" selection-start="3834" selection-end="3834" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="0" selection-start="1892" selection-end="1892" vertical-scroll-proportion="0.47053233">
-          <folding />
+        <state line="196" column="25" selection-start="5775" selection-end="5775" vertical-scroll-proportion="0.78612167">
+          <folding>
+            <marker date="1353581035000" expanded="true" signature="2002:2167" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
