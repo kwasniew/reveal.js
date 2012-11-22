@@ -13,8 +13,11 @@ $(function () {
 						<p></p>
 					</section>
 					*/
-	function tmplArticle(article, category,  i, limit){
-		var articleView = $('<section class="jqModal">').append('<div class="parentCategory"><a href="#/3" class="">back to Shows</a></div>');
+
+	function tmplArticle(article, category, categoryText,  i, limit){
+		var articleView = $('<section class="jqModal">').append('<div class="parentCategory"><a href="#/'+
+			category+'" class="">back to '+
+			categoryText+'</a></div>');
 			
 			var heading = $('<h2>').text(article.tittel);
 			articleView.append(heading);
@@ -34,19 +37,27 @@ $(function () {
 		return articleView;
 	}
 
-	function appendArticles(list, name){
+	function appendArticles(list, name, text, showsColumn){
 		var articles = [];
 		var length = list.length;
 		list.forEach(function (article, i) {
-			articles.push(tmplArticle(article, showsColumn, i, length));
+			articles.push(tmplArticle(article, showsColumn, text,  i, length));
 		});
 		$(name).append(articles);
 	}
 
-	var showsColumn = 3;
 
 	if(ap.shows){
-		appendArticles(ap.shows, '#shows');
+		appendArticles(ap.shows, '#shows', "Shows", 3);
+	}
+
+	if(ap.forside){
+		appendArticles(ap.forside, '#forside', "Forside", 1);
+	}
+
+
+	if(ap.sport){
+		appendArticles(ap.sport, '#sport', "Sport", 1);
 	}
 
 
