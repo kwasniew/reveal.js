@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="113beea5-936c-47ca-bc26-988e8e7c10f2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/hackathon.js" afterPath="$PROJECT_DIR$/js/hackathon.js" />
     </list>
     <ignored path="reveal.js.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,20 +62,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="26" selection-start="1568" selection-end="1568" vertical-scroll-proportion="0.513308">
+            <state line="375" column="31" selection-start="18203" selection-end="18203" vertical-scroll-proportion="-12.46">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jqModal.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/jqModal.js">
+      <file leaf-file-name="hackathon.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/hackathon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="11" selection-start="3834" selection-end="3834" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="24" column="58" selection-start="758" selection-end="758" vertical-scroll-proportion="0.34285715">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,6 +149,7 @@
         <option value="$PROJECT_DIR$/js/jquery.colorbox.js" />
         <option value="$PROJECT_DIR$/css/colorbox.css" />
         <option value="$PROJECT_DIR$/js/jqModal.js" />
+        <option value="$PROJECT_DIR$/js/hackathon.js" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -441,20 +446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jqModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="11" selection-start="3834" selection-end="3834" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/setup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="3" selection-start="1666" selection-end="1666" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/md5.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="268" column="49" selection-start="9597" selection-end="9597" vertical-scroll-proportion="0.0">
@@ -485,10 +476,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/setup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="3" selection-start="1666" selection-end="1666" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="26" selection-start="1568" selection-end="1568" vertical-scroll-proportion="0.513308">
+        <state line="375" column="31" selection-start="18203" selection-end="18203" vertical-scroll-proportion="-12.46">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jqModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="4" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.38099718">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/hackathon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="58" selection-start="758" selection-end="758" vertical-scroll-proportion="0.34285715">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

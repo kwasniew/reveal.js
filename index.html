@@ -74,24 +74,11 @@
 
 	<body>
     <div class="jqmWindow" id="dialog">
-
         <a href="#" class="jqmClose">Close</a>
-        <hr>
-        <em>READ ME</em> -->
-        This is a "vanilla plain" jqModal window. Behavior and appeareance extend far beyond this.
-        The demonstrations on this page will show off a few possibilites. I recommend walking
-        through each one to get an understanding of jqModal <em>before</em> using it.
+        <div id="article">
 
-        <br /><br />
-        You can view the sourcecode of examples by clicking the Javascript, CSS, and HTML tabs.
-        Be sure to checkout the <a href="README">documentation</a> too!
-
-        <br /><br />
-        <em>NOTE</em>; You can close windows by clicking the tinted background known as the "overlay".
-        Clicking the overlay will have no effect if the "modal" parameter is passed, or if the
-        overlay is disabled.
+        </div>
     </div>
-    </section>
 
 
 
@@ -151,7 +138,7 @@
 					<p>
 						to be twitter <a href="#" class="jqModal">Read</a>
 					</p>
-
+                </section>
 			</div>
 
 		</div>
@@ -345,7 +332,7 @@
                 "w480": "http://mobil.aftenposten.no/incoming/article7050534.ece/ALTERNATES/w480c169/FS00055373.jpg",
                 "w980": "http://mobil.aftenposten.no/incoming/article7050534.ece/ALTERNATES/w980c169/FS00055373.jpg"
             }
-        },
+        }
 	        	]
 			}
 		</script>
@@ -385,7 +372,22 @@
         <script src="js/jqModal.js"></script>
         <script>
             $(function() {
-               $("#dialog").jqm();
+
+                $("#dialog").jqm();
+
+                Reveal.addEventListener( 'slidechanged', function( event ) {
+                    console.log(event.currentSlide);
+                    var html = $(event.currentSlide).find(".preview").html();
+                    $("#article").text(html);
+                    // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+                } );
+
+
+//               $('.reveal:not(.overview) section .jqModal').parent('section').click(function() {
+//                   $("#dialog").text("sadfsdaf");
+//               });
+
+
             });
         </script>
 
