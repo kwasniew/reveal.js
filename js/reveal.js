@@ -1488,13 +1488,18 @@ var Reveal = (function(){
 	function onOverviewSlideClicked( event ) {
 		// TODO There's a bug here where the event listeners are not
 		// removed after deactivating the overview.
+		var element = event.target;
+		var i = 6;
+		while(element.nodeName.toLowerCase() !== 'section' && i-- > 0) {
+			element = element.parentNode;
+		}
 		if( isOverviewActive() ) {
 			event.preventDefault();
 
 			deactivateOverview();
 
-			var h = parseInt( event.target.getAttribute( 'data-index-h' ), 10 ),
-				v = parseInt( event.target.getAttribute( 'data-index-v' ), 10 );
+			var h = parseInt( element.getAttribute( 'data-index-h' ), 10 ),
+				v = parseInt( element.getAttribute( 'data-index-v' ), 10 );
 
 			slide( h, v );
 		}
