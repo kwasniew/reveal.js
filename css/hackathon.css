@@ -2,10 +2,15 @@
 	display: inline-block;
 	margin-bottom: 35px;
 	font-size: 0.6em;
-	line-height: 0.6em;
-	padding-left: 1em;
+	line-height: 1em;
+	padding: 3px 0;
 	color: #333;
 	background: #CCC;
 	width: 100%;
 
+}
+
+#shows-template,
+.template {
+	display: none;
 }
