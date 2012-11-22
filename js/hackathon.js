@@ -37,6 +37,7 @@ $(function () {
 		return articleView;
 	}
 
+
 	function appendArticles(list, name, text, showsColumn){
 		var articles = [];
 		var length = list.length;
@@ -44,6 +45,9 @@ $(function () {
 			articles.push(tmplArticle(article, showsColumn, text,  i, length));
 		});
 		$(name).append(articles);
+
+		//list.length = 3;
+
 	}
 
 
@@ -57,7 +61,7 @@ $(function () {
 
 
 	if(ap.sport){
-		appendArticles(ap.sport, '#sport', "Sport", 1);
+		appendArticles(ap.sport, '#sport', "Sport", 2);
 	}
 
 
