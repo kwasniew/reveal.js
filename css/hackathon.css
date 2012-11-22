@@ -32,5 +32,13 @@
 }
 
 .reveal .slides > section > section.present {
-	background: #9FD2CF;
+	background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+	background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+	background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+	background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+	background: radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+	background-color: #f7fbfc;
+	-webkit-box-shadow: 0px 0px 20px black;
+	box-shadow: 0px 0px 20px black
+
 }
