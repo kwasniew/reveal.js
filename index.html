@@ -34,6 +34,12 @@
 		<![endif]-->
 
         <style>
+            .article {
+                -moz-column-count:3; /* Firefox */
+                -webkit-column-count:3; /* Safari and Chrome */
+                column-count:3;
+            }
+
             .jqmWindow {
                 font: 10px !important;
                 display: none;
@@ -1950,7 +1956,6 @@
                     console.log(event.currentSlide);
                     var html = $(event.currentSlide).find(".preview").html();
                     $("#article").text(html);
-                    // event.previousSlide, event.currentSlide, event.indexh, event.indexv
                 } );
 
 
