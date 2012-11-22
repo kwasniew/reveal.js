@@ -27,11 +27,11 @@ $(function () {
 			}
 			articleView.append('<div class="hidden preview">'+article.description+'</div>');
 			if(i+1 < limit){
-				articleView.append('<div class="parentCategory"><a href="#/'+category+'/'+(i+2)+
-				'" class="">see next</a></div>');
+				articleView.append('<div class="seeNext"><a href="#/'+category+'/'+(i+2)+
+				'">see next</a></div>');
 			}else{
-				articleView.append('<div class="parentCategory"><a href="#/'+category+
-				'" class="">back to top</a></div>');
+				articleView.append('<div class="seeNext"><a href="#/'+category+
+				'">back to top</a></div>');
 			}
 			
 		return articleView;
@@ -47,8 +47,8 @@ $(function () {
 	}
 
 
-	if(ap.shows){
-		appendArticles(ap.shows, '#shows', "Shows", 3);
+	if(ap.kultur){
+		appendArticles(ap.kultur, '#kultur', "Kultur", 3);
 	}
 
 	if(ap.forside){
