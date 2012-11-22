@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="113beea5-936c-47ca-bc26-988e8e7c10f2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/hackathon.js" afterPath="$PROJECT_DIR$/js/hackathon.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="reveal.js.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,19 +60,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="392" column="74" selection-start="21848" selection-end="21848" vertical-scroll-proportion="-204.375">
+            <state line="6" column="29" selection-start="91" selection-end="91" vertical-scroll-proportion="0.13235295">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hackathon.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="hackathon.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/hackathon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="26" selection-start="6390" selection-end="6390" vertical-scroll-proportion="0.86283183">
+            <state line="69" column="50" selection-start="5501" selection-end="5608" vertical-scroll-proportion="-12.115385">
               <folding />
             </state>
           </provider>
@@ -108,8 +107,8 @@
         <option value="$PROJECT_DIR$/js/jquery.colorbox.js" />
         <option value="$PROJECT_DIR$/css/colorbox.css" />
         <option value="$PROJECT_DIR$/js/jqModal.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/hackathon.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -449,16 +448,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/hackathon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="392" column="74" selection-start="21848" selection-end="21848" vertical-scroll-proportion="-204.375">
+        <state line="69" column="50" selection-start="5501" selection-end="5608" vertical-scroll-proportion="-12.115385">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/hackathon.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="26" selection-start="6390" selection-end="6390" vertical-scroll-proportion="0.86283183">
+        <state line="6" column="29" selection-start="91" selection-end="91" vertical-scroll-proportion="0.13235295">
           <folding />
         </state>
       </provider>
