@@ -34,10 +34,15 @@
 		<![endif]-->
 
         <style>
-            .article {
+            #article {
                 -moz-column-count:3; /* Firefox */
                 -webkit-column-count:3; /* Safari and Chrome */
                 column-count:3;
+
+                color: #515151;
+                font-family: Georgia, serif;
+                font-size: 19px;
+                line-height: 30.399999618530273px;
             }
 
             .jqmWindow {
@@ -656,7 +661,7 @@
                     } else {
                         var html = $("section.present").first().find(".preview").html();
                         console.log(html);
-                        $("#article").text(html);
+                        $("#article").html(html);
                         dialog.w.show();
                     }
                 };

@@ -19,13 +19,13 @@ $(function () {
 			category+'" class="">back to '+
 			categoryText+'</a></div>');
 			
-			var heading = $('<h3 class="jqModal">').text(article.tittel);
+			var heading = $('<h4 class="jqModal">').text(article.tittel);
 			articleView.append(heading);
 			if(article.media && article.media.w480) {
 				var image = $('<img class="jqModal">').attr({src: article.media.w480});
 				articleView.append(image);
 			}
-			articleView.append('<div class="hidden preview">'+article.description+'</div>');
+			articleView.append($('<div class="hidden preview"></div>').append(article.bodycontent));
 			if(i+1 < limit){
 				articleView.append('<div class="seeNext"><a href="#/'+category+'/'+(i+2)+
 				'">see next</a></div>');
@@ -42,6 +42,7 @@ $(function () {
 		var articles = [];
 		var length = list.length;
 		list.forEach(function (article, i) {
+			article.bodycontent = "<p>Ny T-banelinje fra \u00d8kern til Furuset og videre til Ahus blir for dyrt for Oslo. Ruter ansl\u00e5r at det vil koste over 20 milliarder kroner tilsammen \u00e5 bygge det T-banenettet befolkningen har behov for de neste \u00e5rene (se faktaramme).<\/p><p>- Der m\u00e5 staten ta et st\u00f8rre ansvar. Tunge investeringer som T-bane til Fornebu og Ahus er noe vi ikke klarer med kommunale budsjetter, og staten b\u00f8r engasjere seg sterkere. Det er ogs\u00e5 god milj\u00f8politikk, men vi klarer ikke ta det alene, sier Vinje.<\/p><p>L\u00f8rensvingen, som er ansl\u00e5tt \u00e5 koste en milliard kroner, l\u00e5ner Oslo kommune penger til.<\/p><p>- Oslo har satset p\u00e5 kollektivnett i veldig mange \u00e5r, men det har kostet, og staten b\u00f8r v\u00e6re med p\u00e5 \u00e5 bidra. Det enorme investeringsbehovet kan jeg ikke se hvordan Oslo ellers skal kunne m\u00f8te. Og det tror jeg de begynner \u00e5 skj\u00f8nne, sier Vinje.<\/p><p>Hvis kollektivnettet ikke bygges ut, vil det bli enda tettere k\u00f8er p\u00e5 veiene inn og ut av Oslo. Og det er ikke bare Oslos problem at veiene ikke kan ta av for trafikken. B\u00e5de E6, E18, Trondheimsveien, riksvei 150 og riksvei 190 er Statens vegvesens ansvar.<\/p><p>- Det er riksveiene, statens veier, det kommer til \u00e5 g\u00e5 mest utover, sier Vinje.<\/p><h2>Flinke oslofolk<\/h2><p>Byutviklingsbyr\u00e5d B\u00e5rd Folke Fredriksen h\u00e5per Akershus ogs\u00e5 blir med p\u00e5 kollektivplanene.<\/p><p>- Oslofolk er flinke til \u00e5 bruke kollektivtrafikken. V\u00e5re pendlere er dessverre ikke det i like stor grad. Men derfor samarbeider vi med Akershus for \u00e5 se hele omr\u00e5det under ett. Oslo og Akershus er ett bolig- og arbeidsmarked, sier Fredriksen.<\/p><p>Fornebubanen, T-baneforbindelsen til Fornebu, kan f\u00e5 stoppesteder vestover som gj\u00f8r at det kan bygges tettere for eksempel mellom Sk\u00f8yen og V\u00e6ker\u00f8. Ogs\u00e5 der m\u00e5 staten v\u00e6re med og spleise, mener Vinje.<\/p><p>- Akkurat hvor traseene g\u00e5r og stasjonene blir liggende, skal vi v\u00e6re \u00e6rlige og si at vi er i startfasen p\u00e5.<\/p><h2>Staten lover ingenting<\/h2><p>I Groruddalen, der det er planlagt utbygging av mellom 30.000 og 50.000 boliger, har politikerne planlagt en linje som g\u00e5r p\u00e5 tvers. Ruter mener den b\u00f8r g\u00e5 fra \u00d8kern og Furuset, og etter hvert videre til Ahus. Dette blir den aller dyreste nye strekningen.<\/p><p>- Det er naturlig at staten er med. Erfaringene fra byggingen av T-baneringen viser at investeringer i kollektivtrafikk f\u00f8rer til betydelig boligbygging langs traseen, sier Fredriksen.<\/p><p>Men staten, ved Samferdselsdepartementet, kan ikke love Oslo penger til milliardutbyggingen.<\/p><p>- Regjeringen er i sluttfasen i arbeidet med ny Nasjonal transportplan. Disse sp\u00f8rsm\u00e5lene m\u00e5 vi komme tilbake til ved fremleggelse v\u00e5ren 2013, sier statssekret\u00e6r Lars Erik Bartnes.<\/p><p>Oslopakke tre er 75 milliarder kroner som skal brukes p\u00e5 veier og kollektivtrafikk i Oslo og Akershus, og det er allerede et samarbeid mellom staten, Oslo og Akershus, i tillegg til bompenger.<\/p><p>Oslopakke 3-pengene skal brukes til \u00e5 forlenge Operatunnelen vestover, slik at det kan bygges boliger p\u00e5 Filipstad. N\u00e5r Manglerudtunnelen bygges, en snarvei fra E6 s\u00f8rover til E6 nordover, vil det kunne bygges boliger n\u00e6rmere Ring 3.<\/p>";
 			articles.push(tmplArticle(article, showsColumn, text,  i, length));
 		});
 		$(name).append(articles);
