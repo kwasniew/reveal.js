@@ -26,3 +26,11 @@
 	max-width: 480px;
 	max-height: 270px;
 }
+
+.reveal section {
+	min-height: 300px;
+}
+
+.reveal .slides > section > section.present {
+	background: rgba(0, 0, 0, 0.1);
+}
