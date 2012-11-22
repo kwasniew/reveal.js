@@ -52,18 +52,50 @@ $(function () {
 	}
 
 
-	if(ap.kultur){
-		appendArticles(ap.kultur, '#kultur', "Kultur", 3);
-	}
+    $.getJSON('http://lisa1.aftenposten.no/temp/hackday/?publication=ap&section=sectionFeedForside&n=10', function(data) {
+        ap.forside = data.seksjon;
+        if(ap.forside){
+            appendArticles(ap.forside, '#forside', "Forside", 1);
+        }
+    }, function() {
+        if(ap.forside){
+            appendArticles(ap.forside, '#forside', "Forside", 1);
+        }
 
-	if(ap.forside){
-		appendArticles(ap.forside, '#forside', "Forside", 1);
-	}
+    });
+
+    $.getJSON('http://lisa1.aftenposten.no/temp/hackday/?publication=ap&section=sectionFeedKultur&n=10', function(data) {
+        ap.kultur = data.seksjon;
+        if(ap.kultur){
+            appendArticles(ap.kultur, '#kultur', "Kultur", 3);
+        }
+    }, function() {
+        if(ap.kultur){
+            appendArticles(ap.kultur, '#kultur', "Kultur", 3);
+        }
+
+    });
+
+    $.getJSON('http://lisa1.aftenposten.no/temp/hackday/?publication=ap&section=sectionFeedSport&n=10', function(data) {
+        ap.sport = data.seksjon;
+        ap.sport.length = 10;
+        if(ap.sport){
+            appendArticles(ap.sport, '#sport', "Sport", 2);
+        }
+    }, function() {
+        if(ap.sport){
+            appendArticles(ap.sport, '#sport', "Sport", 2);
+        }
+
+    });
 
 
-	if(ap.sport){
-		appendArticles(ap.sport, '#sport', "Sport", 2);
-	}
+
+
+
+
+
+
 
 
 });
