@@ -33,60 +33,6 @@
 
 		<![endif]-->
 
-        <style>
-            #article {
-                -moz-column-count:3; /* Firefox */
-                -webkit-column-count:3; /* Safari and Chrome */
-                column-count:3;
-
-                color: #515151;
-                font-family: Georgia, serif;
-                font-size: 19px;
-                line-height: 30.399999618530273px;
-            }
-
-            #articleTitle {
-                font-size: 2em;
-                width: 90%;
-                text-align: center;
-            }
-
-            .jqmWindow {
-                font: 10px !important;
-                display: none;
-
-                position: fixed;
-                top: 5%;
-                left: 5%;
-
-                width: 90%;
-                height: 80%;
-
-                background: white;
-                color: #333;
-                border: 2px solid black;
-                padding: 12px;
-                z-index: 100;
-                opacity: 0.9;
-                overflow-y: scroll;
-            }
-
-            .jqmOverlay { background-color: #000;
-                height: 90%;
-                /*border: 1px solid red;*/
-                /*opacity: 0.5;*/
-            }
-
-                /* Fixed posistioning emulation for IE6
-        Star selector used to hide definition from browsers other than IE6
-        For valid CSS, use a conditional include instead */
-            * html .jqmWindow {
-                position: fixed;
-                top: 0;
-                left:0;
-                /*top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');*/
-            }
-        </style>
 	</head>
 
 	<body>
@@ -642,6 +588,7 @@
 				progress: false,
 				history: true,
 				center: true,
+                //transition: 'default',//concave/zoom/linear/none
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
@@ -649,12 +596,8 @@
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
 
