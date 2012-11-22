@@ -40,5 +40,25 @@
 	background-color: #f7fbfc;
 	-webkit-box-shadow: 0px 0px 20px black;
 	box-shadow: 0px 0px 20px black
-
 }
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.jqmClose {
+	float: left;
+	margin-top: 0.1em;
+}
+
+#articleTitle {
+	margin-top: 0;
+}
+
+
+
+
+
+
+
