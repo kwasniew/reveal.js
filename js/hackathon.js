@@ -19,7 +19,7 @@ $(function () {
 			category+'" class="">back to '+
 			categoryText+'</a></div>');
 			
-			var heading = $('<h4 class="jqModal">').text(article.tittel);
+			var heading = $('<h4 class="jqModal articleTitle">').text(article.tittel);
 			articleView.append(heading);
 			if(article.media && article.media.w480) {
 				var image = $('<img class="jqModal">').attr({src: article.media.w480});
