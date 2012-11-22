@@ -67,6 +67,7 @@
 
 				<section id="forside">
 					<section>
+                        <div class="parentCategory"><a href="#" class="">back to Afternposten</a></div>               
 						<h2>Forside</h2>
                         <a href="#/1/1" class="image navigate-down enabled">
                             <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
@@ -79,6 +80,7 @@
 				<!-- Example of nested vertical slides -->
                 <section id="sport">
                     <section>
+                        <div class="parentCategory"><a href="#" class="">back to Afternposten</a></div>
                         <h2>Sport</h2>
                         <a href="#/2/1" class="image navigate-down enabled">
                             <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
@@ -90,6 +92,7 @@
 
 				<section id="kultur">
 					<section>
+                        <div class="parentCategory"><a href="#" class="">back to Afternposten</a></div>               
 						<h2>Kultur</h2>
                         <a href="#/3/1" class="image navigate-down enabled">
                             <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
@@ -100,6 +103,7 @@
 
 
 				<section>
+                    <div class="parentCategory"><a href="#" class="">back to Afternposten</a></div>            
 					<h2>Twitter</h2>
 					<p>
 						<a class="twitter-timeline" data-dnt=true href="https://twitter.com/search?q=%23aftenposten" data-widget-id="271595001958506497">Tweety o "#aftenposten"</a>
@@ -591,25 +595,7 @@
 
 		<script>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: false,
-				progress: false,
-				history: true,
-				center: true,
-                //transition: 'default',//concave/zoom/linear/none
-
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
-
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+			
 
 		</script>
 
@@ -617,20 +603,7 @@
         <script>
             $(function() {
 
-                var myOpen = function(dialog) {
-                        var html = $("section.present").first().find(".preview").html();
-                        var title = $("section.present").first().find(".articleTitle").html();
-                        console.log(html);
-                        $("#article").html(html);
-                        $("#articleTitle").html(title);
-                        dialog.w.show();
-                };
-                $("#dialog").jqm({onShow: myOpen});
-
-                $(".logo").click(function() {
-                    console.log("logo clicked");
-                    Reveal.toggleOverview();
-                });
+               
 
             });
         </script>

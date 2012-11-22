@@ -52,7 +52,7 @@ $(function () {
 	}
 
 
-    $.getJSON('http://lisa1.aftenposten.no/temp/hackday/?publication=ap&section=sectionFeedForside&n=10', function(data) {
+    var forsidePromise = $.getJSON('http://lisa1.aftenposten.no/temp/hackday/?publication=ap&section=sectionFeedForside&n=10', function(data) {
         ap.forside = data.seksjon;
         if(ap.forside){
             appendArticles(ap.forside, '#forside', "Forside", 1);
@@ -64,7 +64,7 @@ $(function () {
 
     });
 
-    $.getJSON('http://lisa1.aftenposten.no/temp/hackday/?publication=ap&section=sectionFeedKultur&n=10', function(data) {
+    var kulturPromise = $.getJSON('http://lisa1.aftenposten.no/temp/hackday/?publication=ap&section=sectionFeedKultur&n=10', function(data) {
         ap.kultur = data.seksjon;
         if(ap.kultur){
             appendArticles(ap.kultur, '#kultur', "Kultur", 3);
@@ -76,7 +76,7 @@ $(function () {
 
     });
 
-    $.getJSON('http://lisa1.aftenposten.no/temp/hackday/?publication=ap&section=sectionFeedSport&n=10', function(data) {
+    var sportPromise = $.getJSON('http://lisa1.aftenposten.no/temp/hackday/?publication=ap&section=sectionFeedSport&n=10', function(data) {
         ap.sport = data.seksjon;
         ap.sport.length = 10;
         if(ap.sport){
@@ -88,6 +88,49 @@ $(function () {
         }
 
     });
+
+
+    $.when.apply($, [forsidePromise, kulturPromise, sportPromise]).done(function () {
+
+        }).always(function(){
+        	// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: false,
+				history: true,
+				center: true,
+				rollingLinks: false,
+                //transition: 'default',//concave/zoom/linear/none
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+
+
+        	 var myOpen = function(dialog) {
+                        var html = $("section.present").first().find(".preview").html();
+                        var title = $("section.present").first().find(".articleTitle").html();
+                        console.log(html);
+                        $("#article").html(html);
+                        $("#articleTitle").html(title);
+                        dialog.w.show();
+                };
+                $("#dialog").jqm({onShow: myOpen});
+
+                $(".logo").click(function() {
+                    console.log("logo clicked");
+                    Reveal.toggleOverview();
+                });
+        });
 
 
 
