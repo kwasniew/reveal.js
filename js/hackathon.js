@@ -52,9 +52,12 @@ $(function () {
 	}
 
 
-    var forsidePromise = $.getJSON('http://lisa1.aftenposten.no/temp/hackday/?publication=ap&section=sectionFeedForside&n=10', function(data) {
-        ap.forside = data.seksjon;
+    var forsidePromise = $.getJSON('http://www.corsproxy.com/lisa.aftenposten.no/win8tabletfeeds/?publication=ap&section=sectionFeedForside&n=20', function(data) {
+        ap.forside = data.seksjon.filter(function(data) {
+            return data.media.w480 !== undefined && data.media.w480.length > 0;
+        });
         if(ap.forside){
+            ap.forside.length = 10;
             appendArticles(ap.forside, '#forside', "Forside", 1);
         }
     }, function() {
@@ -64,9 +67,12 @@ $(function () {
 
     });
 
-    var kulturPromise = $.getJSON('http://lisa1.aftenposten.no/temp/hackday/?publication=ap&section=sectionFeedKultur&n=10', function(data) {
-        ap.kultur = data.seksjon;
+    var kulturPromise = $.getJSON('http://www.corsproxy.com/lisa.aftenposten.no/win8tabletfeeds/?publication=ap&section=sectionFeedKultur&n=20', function(data) {
+        ap.kultur = data.seksjon.filter(function(data) {
+            return data.media.w480 !== undefined && data.media.w480.length > 0;
+        });
         if(ap.kultur){
+            ap.kultur.length = 10;
             appendArticles(ap.kultur, '#kultur', "Kultur", 3);
         }
     }, function() {
@@ -76,10 +82,12 @@ $(function () {
 
     });
 
-    var sportPromise = $.getJSON('http://lisa1.aftenposten.no/temp/hackday/?publication=ap&section=sectionFeedSport&n=10', function(data) {
-        ap.sport = data.seksjon;
-        ap.sport.length = 10;
+    var sportPromise = $.getJSON('http://www.corsproxy.com/lisa.aftenposten.no/win8tabletfeeds/?publication=ap&section=sectionFeedSport&n=20', function(data) {
+        ap.sport = data.seksjon.filter(function(data) {
+            return data.media.w480 !== undefined && data.media.w480.length > 0;
+        });
         if(ap.sport){
+            ap.sport.length = 10;
             appendArticles(ap.sport, '#sport', "Sport", 2);
         }
     }, function() {
