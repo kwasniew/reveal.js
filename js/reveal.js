@@ -574,7 +574,7 @@ var Reveal = (function(){
 
 			for( var i = 0, len1 = horizontalSlides.length; i < len1; i++ ) {
 				var hslide = horizontalSlides[i],
-					htransform = 'translateZ(-2500px) translate(' + ( ( i - indexh ) * 105 ) + '%, 0%)';
+					htransform = 'translateZ(-1000px) translate(' + ( ( i - indexh ) * 105 ) + '%, 0%)';
 
 				hslide.setAttribute( 'data-index-h', i );
 				hslide.style.display = 'block';
