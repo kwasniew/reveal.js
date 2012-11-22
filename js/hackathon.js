@@ -25,7 +25,7 @@ $(function () {
 				var image = $('<img class="jqModal">').attr({src: article.media.w480});
 				articleView.append(image);
 			}
-			articleView.append($('<div class="hidden preview"></div>').append(article.bodycontent));
+			articleView.append($('<div class="hidden articleLink"></div>').append('http://www.corsproxy.com/'+article.jsonnewsml.substring(7)));
 			if(i+1 < limit){
 				articleView.append('<div class="seeNext"><a href="#/'+category+'/'+(i+2)+
 				'">see next</a></div>');
@@ -125,17 +125,20 @@ $(function () {
 
 
         	 var myOpen = function(dialog) {
-                        var html = $("section.present").first().find(".preview").html();
-                        var title = $("section.present").first().find(".articleTitle").html();
-                        console.log(html);
-                        $("#article").html(html);
-                        $("#articleTitle").html(title);
-                        dialog.w.show();
+                 var link = $("section.present section.present").first().find('.articleLink').text();
+                 var title = $("section.present section.present").first().find(".articleTitle").text();
+
+                 $.getJSON(link, function(data) {
+                     var html = data.bodycontent;
+                     console.log(html);
+                     $("#article").html(html);
+                     $("#articleTitle").html(title);
+                     dialog.w.show();
+                 });
                 };
                 $("#dialog").jqm({onShow: myOpen});
 
                 $(".logo").click(function() {
-                    console.log("logo clicked");
                     Reveal.toggleOverview();
                 });
         });
