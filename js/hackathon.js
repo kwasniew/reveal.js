@@ -13,7 +13,7 @@ $(function () {
 						<p></p>
 					</section>
 					*/
-	function tmplArticle(article){
+	function tmplArticle(article, category,  i){
 		var articleView = $('<section>').append('<div class="parentCategory"><a href="#/3" class="">back to Shows</a></div>');
 			
 			var heading = $('<h2>').text(article.tittel);
@@ -22,14 +22,18 @@ $(function () {
 				var image = $('<img>').attr({src: article.media.w480});
 				articleView.append(image);
 			}
+			articleView.append('<div class="parentCategory"><a href="#/'+category+'/'+(i+2)+
+				'" class="">see next</a></div>');
 		return articleView;
 	}
+
+	var showsColumn = 3;
 
 	if(ap.shows){
 
 		var articles = [];
-		ap.shows.forEach(function (article) {
-			articles.push(tmplArticle(article));
+		ap.shows.forEach(function (article, i) {
+			articles.push(tmplArticle(article, showsColumn, i));
 		});
 		$('#shows').append(articles);
 
