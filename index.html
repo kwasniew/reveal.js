@@ -1950,18 +1950,13 @@
         <script>
             $(function() {
 
-                $("#dialog").jqm();
-
-                Reveal.addEventListener( 'slidechanged', function( event ) {
-                    console.log(event.currentSlide);
-                    var html = $(event.currentSlide).find(".preview").html();
+                var myOpen = function(dialog) {
+                    var html = $("section.present").first().find(".preview").html();
+                    console.log(html);
                     $("#article").text(html);
-                } );
-
-
-//               $('.reveal:not(.overview) section .jqModal').parent('section').click(function() {
-//                   $("#dialog").text("sadfsdaf");
-//               });
+                    dialog.w.show();
+                };
+                $("#dialog").jqm({onShow: myOpen});
 
 
             });
