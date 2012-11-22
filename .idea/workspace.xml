@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="113beea5-936c-47ca-bc26-988e8e7c10f2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="reveal.js.iws" />
@@ -64,7 +63,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="36" selection-start="4458" selection-end="4458" vertical-scroll-proportion="0.48075023">
+            <state line="41" column="29" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.32576504">
               <folding />
             </state>
           </provider>
@@ -496,7 +495,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="36" selection-start="4458" selection-end="4458" vertical-scroll-proportion="0.48075023">
+        <state line="41" column="29" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.32576504">
           <folding />
         </state>
       </provider>
