@@ -1,0 +1,11 @@
+.reveal .parentCategory {
+	display: inline-block;
+	margin-bottom: 35px;
+	font-size: 0.6em;
+	line-height: 0.6em;
+	padding-left: 1em;
+	color: #333;
+	background: #CCC;
+	width: 100%;
+
+}
