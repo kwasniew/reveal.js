@@ -5,12 +5,11 @@
 	line-height: 1em;
 	padding: 3px 0;
 	color: #333;
-	background: #CCC;
+	background: #f7fbfc;
 	width: 100%;
 
 }
 
-#shows-template,
-.template {
+.hidden {
 	display: none;
 }
