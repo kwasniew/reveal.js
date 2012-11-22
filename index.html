@@ -34,6 +34,14 @@
 		<![endif]-->
 
         <style>
+
+            .logo {
+                position: fixed;
+                top:10px;
+                left:15px;
+                z-index: 100;
+            }
+
             #article {
                 -moz-column-count:3; /* Firefox */
                 -webkit-column-count:3; /* Safari and Chrome */
@@ -90,6 +98,9 @@
 	</head>
 
 	<body>
+
+    <img class="logo" src="http://labrat.no/wp-content/uploads/2012/06/Aftenposten_App_icon_LowRes_noBorder.png" height="40" width="40"/>
+
     <div class="jqmWindow" id="dialog">
         <a href="#" class="jqmClose"><img src="http://cdn4.iconfinder.com/data/icons/creme/128/Delete.png" height="20" width="20"/></a>
         <h3 id="articleTitle"></h3>
@@ -674,7 +685,10 @@
                 };
                 $("#dialog").jqm({onShow: myOpen});
 
-
+                $(".logo").click(function() {
+                    console.log("logo clicked");
+                    Reveal.toggleOverview();
+                });
 
             });
         </script>
