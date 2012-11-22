@@ -9,7 +9,7 @@
 	line-height: 1em;
 	padding: 3px 0;
 	color: #333;
-	background: #f7fbfc;
+	background: rgba(0, 0, 0, 0.03);
 	width: 100%;
 
 }
@@ -32,5 +32,5 @@
 }
 
 .reveal .slides > section > section.present {
-	background: rgba(0, 0, 0, 0.1);
+	background: #9FD2CF;
 }
