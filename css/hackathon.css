@@ -1,6 +1,10 @@
+
+
+
+.reveal .seeNext,
 .reveal .parentCategory {
 	display: inline-block;
-	margin-bottom: 35px;
+	margin-bottom: 40px;
 	font-size: 0.6em;
 	line-height: 1em;
 	padding: 3px 0;
@@ -8,6 +12,10 @@
 	background: #f7fbfc;
 	width: 100%;
 
+}
+
+.reveal .seeNext{
+	margin: 40px 0 0 0;
 }
 
 .hidden {
