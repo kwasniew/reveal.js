@@ -141,6 +141,17 @@ $(function () {
                 $(".logo").click(function() {
                     Reveal.toggleOverview();
                 });
+
+            $(document).keydown(function(e){
+                if(e.keyCode === 79) {
+                   $("section.present section.present img").first().click();
+                }
+                if(e.keyCode === 67) {
+                   $(".jqmClose").first().click();
+                }
+
+                return false;
+            });
         });
 
 
